@@ -25,7 +25,7 @@ The project operates as a closed-loop Mixed Reality system, divided into four di
 ### How the Data Flows:
 1.  **Zone 1: Physical Input (The Eyes):** Two **ESP32-CAM** modules capture high-speed video of the player from a top-down perspective and stream it via MJPEG over WiFi.
 2.  **Zone 2: Processing Layer (The Brain):** A **Python** backend receives the video feeds. It uses OpenCV to perform lens rectification, color masking (tracking the gloves), and stereoscopic triangulation to calculate real-time 3D coordinates ($X, Y, Z$).
-3.  **Zone 3: Application Layer (The Game):** The 3D coordinates are sent via **UDP** to the **Unity Game Engine**. Unity maps the virtual gloves to the physical space, spawns rhythmic targets, and detects collisions.
+3.  **Zone 3: Application Layer (The Game):** The 3D coordinates are sent via **UDP** to the **Unity Game Engine**. Unity maps the virtual gloves to the physical space, spawns targets, and detects collisions.
 4.  **Zone 4: Physical Output (The Display):** A projector, connected to the PC via HDMI, maps the game visuals onto the curved surface of the punching bag. The player sees the targets on the bag and feels the impact when they punch.
 
 ## 📂 Project Structure & Modules
@@ -44,15 +44,15 @@ To run the full system, you will need to set up the three modules in the followi
 
 ### 1. Firmware Setup 📸
 Flash the ESP32-CAMs with the custom firmware to establish video streams.
-* 👉 **Go to:** [`BeatBoxingEsp32/README.md`](https://github.com/BeatBoxingProject/BeatBoxingESP32/blob/master/README.md) for flashing instructions and WiFi configuration.
+* 👉 **Go to:** [`BeatBoxingEsp32`](https://github.com/BeatBoxingProject/BeatBoxingESP32) for flashing instructions and WiFi configuration.
 
 ### 2. Backend Setup 🧠
 Install the Python environment, calibrate your cameras, and tune the glove color tracking.
-* 👉 **Go to:** [`BeatBoxingPython/README.md`](https://github.com/BeatBoxingProject/BeatBoxingPython/blob/master/README.md) for dependency installation, stereo calibration, and color tuning steps.
+* 👉 **Go to:** [`BeatBoxingPython`](https://github.com/BeatBoxingProject/BeatBoxingPython) for dependency installation, stereo calibration, and color tuning steps.
 
 ### 3. Game Setup 🎮
 Open the project in Unity, align the virtual projector, and start the game loop.
-* 👉 **Go to:** [`BeatBoxingUnity/README.md`](https://github.com/BeatBoxingProject/BeatBoxingUnity/blob/master/README.md) for scene setup, projector alignment, and gameplay instructions.
+* 👉 **Go to:** [`BeatBoxingUnity`](https://github.com/BeatBoxingProject/BeatBoxingUnity) for scene setup, projector alignment, and gameplay instructions.
 
 ---
 
