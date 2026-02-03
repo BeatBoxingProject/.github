@@ -52,8 +52,6 @@ Install the Python environment, calibrate your cameras, and tune the glove color
 Open the project in Unity, align the virtual projector, and start the game loop.
 * 👉 **Go to:** [`BeatBoxingUnity`](https://github.com/BeatBoxingProject/BeatBoxingUnity) for scene setup, projector alignment, and gameplay instructions.
 
----
-
 ### 📝 Credits
 **University:** Hochschule Heilbronn (HHN)<br>
 **Course:** Mixed Reality (SEM)<br>
