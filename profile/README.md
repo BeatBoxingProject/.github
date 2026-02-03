@@ -57,8 +57,8 @@ Open the project in Unity, align the virtual projector, and start the game loop.
 ---
 
 ### 📝 Credits
-**University:** Hochschule Heilbronn (HHN)
-**Course:** Mixed Reality (SEM)
+**University:** Hochschule Heilbronn (HHN)<br>
+**Course:** Mixed Reality (SEM)<br>
 **Team:**
 * [NDXIII](https://github.com/NDXIII)
 * [Kartoffelbauer](https://github.com/Kartoffelbauer)
