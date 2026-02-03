@@ -6,8 +6,6 @@
   <em>Figure 1: Player punching projected targets in rhythm with the music.</em>
 </p>
 
----
-
 **Beat Boxing** is an immersive game that blends physical exercise with digital gaming. Developed at **Hochschule Heilbronn** for the "Mixed Reality" lecture, this project transforms a standard punching bag into a smart, interactive gaming surface.
 
 Inspired by *Beat Saber*, but designed for real-world impact, players use colored boxing gloves to punch projected targets. Unlike VR, where you strike thin air, **Beat Boxing** provides genuine haptic feedback against a physical heavy bag.
