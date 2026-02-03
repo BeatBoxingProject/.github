@@ -17,7 +17,7 @@ Inspired by *Beat Saber*, but designed for real-world impact, players use colore
 The project operates as a closed-loop Mixed Reality system, divided into four distinct zones as illustrated below.
 
 <p align="center">
-  <img src="images/architecture.jpg" width="900" alt="System Architecture Diagram">
+  <img src="images/architecture.png" width="900" alt="System Architecture Diagram">
   <br>
   <em>Figure 2: The data flow pipeline from physical input to visual output.</em>
 </p>
