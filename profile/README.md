@@ -1,9 +1,9 @@
 # Beat Boxing - Interactive Mixed-Reality Boxing Game 🥊
 
 <p align="center">
-  <img src="images/demo.gif" width="800" alt="Beat Boxing Project Demo - Punching targets on the bag">
+  <img src="images/demo.gif" width="320" alt="Beat Boxing Project Demo - Punching targets on the bag">
   <br>
-  <em>Figure 1: Player punching projected targets in rhythm with the music.</em>
+  <em>Figure 1: Player punching projected targets.</em>
 </p>
 
 **Beat Boxing** is an immersive game that blends physical exercise with digital gaming. Developed at **Hochschule Heilbronn** for the "Mixed Reality" lecture, this project transforms a standard punching bag into a smart, interactive gaming surface.
