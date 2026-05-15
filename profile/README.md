@@ -33,7 +33,7 @@ This repository is organized into three main sub-projects. Please refer to their
 | Module | Technology | Description | Documentation |
 | :--- | :--- | :--- | :--- |
 | **Firmware** | C++ / PlatformIO | Firmware for the ESP32-CAM modules. Handles WiFi connection and MJPEG streaming with dynamic settings. | [View README](https://github.com/BeatBoxingProject/BeatBoxingESP32/blob/master/README.md) |
-| **Backend** | Python / OpenCV | The computer vision brain. Handles stereo calibration, color tracking, triangulation, and UDP broadcasting. | [View README](https://github.com/BeatBoxingProject/BeatBoxingPython/blob/master/README.md) |
+| **Backend** | Python / OpenCV | The computer vision brain. Handles stereo calibration, color tracking, triangulation, and UDP broadcasting. | [View README](https://github.com/BeatBoxingProject/BeatBoxingCameraTracking/blob/master/README.md) |
 | **Frontend** | Unity / C# | The visual game engine. Handles projection mapping, hit detection, particle effects, and UI. | [View README](https://github.com/BeatBoxingProject/BeatBoxingUnity/blob/master/README.md) |
 
 ## 🚀 Getting Started
@@ -46,7 +46,7 @@ Flash the ESP32-CAMs with the custom firmware to establish video streams.
 
 ### 2. Backend Setup 🧠
 Install the Python environment, calibrate your cameras, and tune the glove color tracking.
-* 👉 **Go to:** [`BeatBoxingPython`](https://github.com/BeatBoxingProject/BeatBoxingPython) for dependency installation, stereo calibration, and color tuning steps.
+* 👉 **Go to:** [`BeatBoxingCameraTracking`](https://github.com/BeatBoxingProject/BeatBoxingCameraTracking) for dependency installation, stereo calibration, and color tuning steps.
 
 ### 3. Game Setup 🎮
 Open the project in Unity, align the virtual projector, and start the game loop.
