@@ -22,8 +22,8 @@ The project operates as a closed-loop Mixed Reality system, divided into four di
 
 ### How the Data Flows:
 1.  **Zone 1: Physical Input (The Eyes):** Two **ESP32-CAM** modules capture high-speed video of the player from a top-down perspective and stream it via MJPEG over WiFi.
-2.  **Zone 2: Processing Layer (The Brain):** Splitted into two **Python** backends. The first one processes the video feeds and calculates the real-time 3D coordinates ($X, Y, Z$). The second one records the acceleration data from the gloves sensors.
-3.  **Zone 3: Application Layer (The Game):** All data is sent via **UDP** to the **Unity Game Engine**. Unity maps the virtual gloves to the physical space, spawns targets, and detects collisions.
+2.  **Zone 2: Processing Layer (The Brain):** Splitted into two **Python** backends. The first one processes the video feeds and calculates the real-time 3D coordinates ($X, Y, Z$). The second one records the acceleration data from the glove sensors.
+3.  **Zone 3: Application Layer (The Game):** All data from the processing layer is sent via **UDP** to the **Unity Game Engine**. Unity maps the virtual gloves to the physical space, spawns targets, and detects collisions and punching force.
 4.  **Zone 4: Physical Output (The Display):** A projector, connected to the PC via HDMI, maps the game visuals onto the curved surface of the punching bag. The player sees the targets on the bag and feels the impact when they punch.
 
 ## 📂 Project Structure & Modules
@@ -33,8 +33,8 @@ This repository is organized into four main sub-projects. Please refer to their 
 | Module | Technology | Description | Documentation |
 | :--- | :--- | :--- | :--- |
 | **Firmware** | C++ / PlatformIO | Firmware for the ESP32-CAM modules. Handles WiFi connection and MJPEG streaming with dynamic settings. | [View README](https://github.com/BeatBoxingProject/BeatBoxingESP32/blob/master/README.md) |
-| **Camera Tracking** | Python / OpenCV | The tracking vision logic. Connects to both the esp32 cameras and performs the stereo calibration, color tracking, triangulation and UDP broadcasting. | [View README](https://github.com/BeatBoxingProject/BeatBoxingCameraTracking/blob/master/README.md) |
-| **Sensor Tracking** | Python | The sensor tracking logic. Handles acceleration sensor tracking and UDP broadcasting. | [View README](https://github.com/BeatBoxingProject/BeatBoxingSensorTracking/blob/master/README.md) |
+| **Camera Tracking** | Python / OpenCV | The vision tracking logic. Connects to both the esp32 cameras and performs stereo calibration, color tracking, triangulation and broadcasts the 3D coordinates via UDP. | [View README](https://github.com/BeatBoxingProject/BeatBoxingCameraTracking/blob/master/README.md) |
+| **Sensor Tracking** | Python | The sensor tracking logic. Handles acceleration sensor tracking and broadcasts it via UDP. | [View README](https://github.com/BeatBoxingProject/BeatBoxingSensorTracking/blob/master/README.md) |
 | **Frontend** | Unity / C# | The visual game engine. Handles projection mapping, hit detection, particle effects, and UI. | [View README](https://github.com/BeatBoxingProject/BeatBoxingUnity/blob/master/README.md) |
 
 ## 🚀 Getting Started
